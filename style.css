@@ -1,0 +1,173 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+
+    background-image: url("img/tapeet.jpg");
+    background-repeat: repeat;
+    background-size: auto;    
+    background-attachment: fixed;
+}
+
+
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Ülemine osa */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 26px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #c6a8b4;
+    background-color: #f9eff3;
+    color: #553645;
+}
+
+.nav-link-active {
+    background-color: #e6cdd9;
+}
+
+/* Sotsiaalmeedia nupud */
+
+.header-right {
+    display: flex;
+    gap: 6px;
+}
+
+.social-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #c6a8b4;
+    font-size: 12px;
+    text-decoration: none;
+    color: #553645;
+    background-color: #ffffff;
+}
+
+/* Sisu: kaks tulpa */
+
+.content {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.single-column {
+    display: block;
+}
+
+
+
+.column {
+    flex: 1;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+
+/* lihtne kast (galerii, kaart, broneeri tekst) */
+
+.simple-box {
+    border: 1px solid #d9b9c7;
+    background-color: #fdf5f8;
+    padding: 8px;
+    min-height: 180px;
+}
+
+.box-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* info plokk (aadress ja ajad) */
+
+.info-block {
+    margin-top: 10px;
+}
+
+/* hinnakirja tabel */
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.price-table th,
+.price-table td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.price-table th {
+    background-color: #f3e0ea;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #faf2f6;
+}
+
+.small-note {
+    font-size: 13px;
+}
+
+/* jalus */
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
